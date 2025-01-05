@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamza Memon - Resume</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sidebar {
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.5s ease-out;
+        }
+        .content {
+            width: 100%;
+            padding: 20px;
+        }
+        @media (min-width: 768px) {
+            .sidebar {
+                width: 20%;
+                height: 100vh;
+                position: fixed;
+            }
+            .content {
+                width: 75%;
+                margin-left: 25%;
+            }
+        }
+        h2, h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin-top: 0;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #555;
+        }
+        p {
+            margin: 5px 0;
+            color: #444;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+            color: #444;
+        }
+        .highlight {
+            font-weight: bold;
+        }
+
+        /* Animation Keyframes */
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>RESUME</h1>
+        <h2>Hamza Memon</h2>
+        <p><span class="highlight">Phone:</span> +91-9987607151</p>
+        <p><span class="highlight">Email:</span> mohd.hamzamemon@gmail.com</p>
+        <h3>Personal Details</h3>
+        <ul>
+            <li><span class="highlight">Location:</span> Mumbai</li>
+            <li><span class="highlight">Date of Birth:</span> October 29, 2003</li>
+            <li><span class="highlight">Gender:</span> Male</li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h2>Education</h2>
+        <ul>
+            <li><span class="highlight">B.Sc in Computers:</span> Rizvi College of Engineering, Mumbai (Score: 2%)</li>
+            <li><span class="highlight">Class XII:</span> Maharashtra Board (Score: 70% in 2021)</li>
+            <li><span class="highlight">Class X:</span> Maharashtra Board (Score: 59% in 2017)</li>
+        </ul>
+
+        <h2>Internships and Projects</h2>
+        <h3>Internship: Web Development Intern</h3>
+        <p><span class="highlight">Duration:</span> November 2023 - May 2024</p>
+        <p>Worked under a senior web developer to build and optimize web applications.</p>
+        <p><span class="highlight">Skills Used:</span> HTML, CSS, JavaScript, React.js, Python</p>
+
+        <h3>Project: Personal Portfolio Website</h3>
+        <p><span class="highlight">Duration:</span> November 2024 - November 2024</p>
+        <p>Developed and hosted a personal portfolio showcasing skills and projects on GitHub.</p>
+        <p><span class="highlight">Skills Used:</span> HTML, CSS, JavaScript</p>
+
+        <h2>Skills and Achievements</h2>
+        <p><span class="highlight">Technical Skills:</span> JavaScript, Python, SQL, HTML, CSS, React.js, Bootstrap, Django, MongoDB, NoSQL</p>
+        <p><span class="highlight">Languages:</span> English (Proficient)</p>
+    </div>
+</body>
+</html>
